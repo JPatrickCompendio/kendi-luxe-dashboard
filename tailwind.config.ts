@@ -13,12 +13,21 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['Playfair Display', 'serif'],
+        body: ['Poppins', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        "old-rose": "hsl(var(--old-rose))",
+        gold: "hsl(var(--gold))",
+        "soft-pink": "hsl(var(--soft-pink))",
+        "accent-gray": "hsl(var(--accent-gray))",
+        "text-gray": "hsl(var(--text-gray))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -57,6 +66,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'gradient-luxury': 'var(--gradient-luxury)',
+        'gradient-soft': 'var(--gradient-soft)',
+      },
+      boxShadow: {
+        'elegant': 'var(--shadow-elegant)',
+        'gold': 'var(--shadow-gold)',
       },
       borderRadius: {
         lg: "var(--radius)",
