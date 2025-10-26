@@ -8,6 +8,12 @@ import { TopNavbar } from "@/components/layout/TopNavbar";
 import Dashboard from "./pages/Dashboard";
 import Clients from "./pages/Clients";
 import Staff from "./pages/Staff";
+import Services from "./pages/Services";
+import Payments from "./pages/Payments";
+import Reports from "./pages/Reports";
+import Feedback from "./pages/Feedback";
+import Settings from "./pages/Settings";
+import Inventory from "./pages/Inventory";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,12 +33,12 @@ const App = () => (
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/clients" element={<Clients />} />
                 <Route path="/staff" element={<Staff />} />
-                <Route path="/services" element={<div className="p-8"><h1 className="text-4xl font-heading font-bold">Services - Coming Soon</h1></div>} />
-                <Route path="/payments" element={<div className="p-8"><h1 className="text-4xl font-heading font-bold">Payments - Coming Soon</h1></div>} />
-                <Route path="/reports" element={<div className="p-8"><h1 className="text-4xl font-bold font-heading">Reports - Coming Soon</h1></div>} />
-                <Route path="/feedback" element={<div className="p-8"><h1 className="text-4xl font-bold font-heading">Feedback - Coming Soon</h1></div>} />
-                <Route path="/inventory" element={<div className="p-8"><h1 className="text-4xl font-bold font-heading">Inventory - Coming Soon</h1></div>} />
-                <Route path="/settings" element={<div className="p-8"><h1 className="text-4xl font-bold font-heading">Settings - Coming Soon</h1></div>} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/payments" element={<Payments />} />
+                <Route path="/reports" element={<Reports />} />
+                <Route path="/feedback" element={<Feedback />} />
+                <Route path="/inventory" element={<Inventory />} />
+                <Route path="/settings" element={<Settings />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
